@@ -8,8 +8,8 @@
 **Community:** Join [Discord](https://discord.com/invite/zpnuBRXhKg) for discussions and support
 
 
-<p align="center"><a href="https://youtu.be/FxSprPEKiC8"><img src="https://i.ytimg.com/vi/FxSprPEKiC8/maxresdefault.jpg" width="720"></a></p>
-<p align="center"><a href="https://youtu.be/FxSprPEKiC8"><b>▶ Watch: Cheapest AI Image generator </b></a></p>
+<p align="center"><a href="https://youtu.be/3kc9oqXJN5k"><img src="https://i.ytimg.com/vi/3kc9oqXJN5k/maxresdefault.jpg" width="720"></a></p>
+<p align="center"><a href="https://youtu.be/3kc9oqXJN5k"><b>▶ Watch: Seedance 2.5 Flash Uncensored (Spicy) API: 33% Cheaper </b></a></p>
 
 <p align="center">
   <a href="https://github.com/Anil-matcha/awesome-generative-ai-apps">
@@ -507,6 +507,22 @@ You'll be prompted to enter your Muapi API key on first use (skip the key if you
 npm run build
 npm run start
 ```
+
+### Run with Docker
+
+The image builds from the submodule packages, so clone with submodules first. Without them, `docker compose up --build` stops with `failed to solve: lstat /packages/Vibe-Workflow/packages/workflow-builder: no such file or directory`.
+
+```bash
+git clone --recurse-submodules https://github.com/Anil-matcha/Open-Generative-AI.git
+cd Open-Generative-AI
+
+# If you already cloned without --recurse-submodules, run this once:
+# git submodule update --init --recursive
+
+docker compose up --build
+```
+
+The app is then at http://localhost:3001. To use another port, change the first number under `ports` in `docker-compose.yml`.
 
 ### Desktop App Build
 
